@@ -18,11 +18,11 @@ jobs:
       matrix:
         include:
           - arch: armv7
-            distro: ubuntu18.04
+            distro: ubuntu20.04
             exe_name: main
             artifact_name: main_linux_armv7.tgz
           - arch: aarch64
-            distro: ubuntu18.04
+            distro: ubuntu20.04
             exe_name: main
             artifact_name: main_linux_aarch64.tgz
 
@@ -36,7 +36,7 @@ jobs:
         git config --global http.postBuffer 100M
         git submodule update --init --recursive --recommend-shallow --depth 1
 
-    - uses: uraimo/run-on-arch-action@v2.0.5
+    - uses: uraimo/run-on-arch-action@v2
       name: Build
       id: build
       with:
