@@ -72,4 +72,6 @@ jobs:
           ${{ matrix.artifact_name }}
           LICENSE
           NOTICE.md
+      permissions:
+          contents: write
 
