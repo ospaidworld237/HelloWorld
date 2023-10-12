@@ -18,11 +18,11 @@ jobs:
       matrix:
         include:
           - arch: armv7
-            distro: ubuntu20.04
+            distro: ubuntu22.04
             exe_name: main
             artifact_name: main_linux_armv7.tgz
           - arch: aarch64
-            distro: ubuntu20.04
+            distro: ubuntu22.04
             exe_name: main
             artifact_name: main_linux_aarch64.tgz
 
