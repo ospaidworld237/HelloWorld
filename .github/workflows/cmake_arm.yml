@@ -36,7 +36,7 @@ jobs:
         git config --global http.postBuffer 100M
         git submodule update --init --recursive --recommend-shallow --depth 1
 
-    - uses: uraimo/run-on-arch-action@v2
+    - uses: uraimo/run-on-arch-action@v2.0.5
       name: Build
       id: build
       with:
