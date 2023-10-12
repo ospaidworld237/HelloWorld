@@ -29,7 +29,7 @@ jobs:
             artifact_name: main_mac_darwin.tgz
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       # with:
       #   fetch-depth: 1
       #   submodules: recursive
@@ -58,7 +58,7 @@ jobs:
         ls
 
     - name: Upload Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: ${{ matrix.artifact_name }}
         path: ${{ matrix.artifact_name }}
