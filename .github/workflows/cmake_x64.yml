@@ -27,6 +27,8 @@ jobs:
           - os: macOS-latest
             exe_name: main
             artifact_name: main_mac_darwin.tgz
+    permissions:
+        contents: write
 
     steps:
     - uses: actions/checkout@v3

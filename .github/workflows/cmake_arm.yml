@@ -25,6 +25,8 @@ jobs:
             distro: ubuntu_latest
             exe_name: main
             artifact_name: main_linux_aarch64.tgz
+    permissions:
+        contents: write
 
     steps:
     - uses: actions/checkout@v3
