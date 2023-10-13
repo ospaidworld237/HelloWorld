@@ -74,6 +74,4 @@ jobs:
           ${{ matrix.artifact_name }}
           LICENSE
           NOTICE.md
-      #env:
-      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
