@@ -27,6 +27,8 @@ jobs:
           - os: macOS-latest
             exe_name: main
             artifact_name: main_mac_darwin.tgz
+    permissions:
+        contents: write
 
     steps:
     - uses: actions/checkout@v3
@@ -72,8 +74,6 @@ jobs:
           ${{ matrix.artifact_name }}
           LICENSE
           NOTICE.md
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      permissions:
-          contents: write
+      #env:
+      #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
